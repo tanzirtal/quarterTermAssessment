@@ -44,6 +44,13 @@ public class Main {
 
         VehicleApp.printPassengerNumbersOnly(passengerList);
 
+        List<Driveable> myDriveables = new ArrayList<>();
+        myDriveables.add(myBoat);
+        myDriveables.add(myCar);
+        myDriveables.add(myTruck);
+
+        VehicleApp.sortAndPrintDriveableVehiclesBySpeed(myDriveables);
+
         myCar.getPriceAfterTax(myCar);
 
 

@@ -19,4 +19,13 @@ public class Truck extends Vehicle implements Driveable{
     public void printSpeed() {
         System.out.println(getSpeed());
     }
+
+    @Override
+    public String toString() {
+        return "Truck{" +
+                "speed=" + getSpeed() +
+                ", price=" + getPrice() +
+                ", TAX_AMOUNT=" + getTAX_AMOUNT() +
+                '}';
+    }
 }

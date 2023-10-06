@@ -17,11 +17,11 @@ public class VehicleApp {
     }
 
     //confused on the Comparator portion
-    public static void sortAndPrintDriveableVehiclesBySpeed(List<Driveable> vehicles){
-        vehicles.sort(Comparator.comparingInt());
+    public static void sortAndPrintDriveableVehiclesBySpeed(List<Driveable> myDriveables){
+        myDriveables.sort(Comparator.comparingInt(Driveable::getSpeed));
 
-        for (Driveable vehicle : vehicles){
-            vehicle.printSpeed();
+        for (Driveable vehicle : myDriveables){
+            System.out.println(vehicle);
         }
     }
 
